@@ -1,0 +1,49 @@
+<%= form_for resource, html: { class: 'st-signup-form' } do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <p class="text-muted">Sign up now for early access</p>
+  <div class="form-group">
+    <%= f.label :email, class: 'sr-only' %>
+    <%= f.email_field :email, placeholder: true, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :name, class: 'sr-only' %>
+    <%= f.text_field :name, placeholder: true, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :favorite_sports_teams, class: 'sr-only' %>
+    <%= f.text_field :favorite_sports_teams, placeholder: true, class: 'form-control' %>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <%= f.label :age, class: 'sr-only' %>
+        <%= f.number_field :age, placeholder: true, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="radio">
+            <%= f.label :gender_male do |lb| %>
+              <%= f.radio_button :gender, "male", checked: true %>
+              <%= lb.translation %>
+            <% end %>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="radio">
+            <%= f.label :gender_female do |lb| %>
+              <%= f.radio_button :gender, "female" %>
+              <%= lb.translation %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-offset-6 col-sm-6">
+      <%= f.submit 'Submit', class: 'btn btn-block btn-primary' %>
+    </div>
+  </div>
+<% end %>

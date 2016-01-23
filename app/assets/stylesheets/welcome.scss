@@ -1,3 +1,78 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap-overrides";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+  background: #F1F0E9 image-url('welcome/bg.png') repeat top left;
+  color: #494040;
+  font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Crete Round', serif;
+  text-transform: uppercase;
+}
+
+.st-logo {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.st-alpha {
+  font-size: 48px;
+}
+
+.st-lead {
+  font-size: 24px;
+}
+
+.st-lead > img {
+  margin-top: -6px;
+}
+
+.st-signup-form {
+  max-width: 380px;
+  width: 100%;
+  margin: 80px auto;
+}
+
+.st-list-social {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+
+.st-list-social > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.st-list-social > li > a {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+  display: inline-block;
+  border-radius: 100px;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+}
+
+.st-list-social > li > a:hover {
+
+}
+
+.st-list-social > li > a,
+.st-list-social > li > a > .fa {
+  line-height: 48px;
+}
