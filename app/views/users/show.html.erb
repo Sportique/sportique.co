@@ -1,14 +1,17 @@
-<%= link_to facebook_url, class: 'btn btn-facebook' do %>
-  <%= icon('facebook') %> Share on Facebook
-<% end %>
-<%= link_to twitter_url, class: 'btn btn-twitter' do %>
-  <%= icon('twitter') %> Share on Twitter
-<% end %>
+<p class="h3" style="margin: 40px 0;">Thanks for signing up! It’s early users like you who will make this special. We are so grateful for you. We encourage you to share the signup link with your fellow sports fans. Stay tuned for our official launch in the coming months ahead!</p>
 
-<%= link_to instagram_url, class: 'btn btn-instagram' do %>
-  <%= icon('instagram') %> Share on Instagram
-<% end %>
+<p class="h4"><strong>We value your feedback <a href="https://www.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2F1Qbu1JLbRcRKmaDAEPFP9qOBj91cA_OHSV55qSelCeGM%2Fviewform%3Fusp%3Dsend_form&h=4AQEOHfFZ">click here</a> to help make this great</strong></p>
 
-<%= link_to pinterest_url, class: 'btn btn-pinterest' do %>
-  <%= icon('pinterest') %> Share on Pinterest
-<% end %>
+
+<ul class="list-inline" style="margin: 40px 0;">
+  <li>
+    <%= link_to 'https://www.facebook.com/sharer/sharer.php?sdk=joey&u=http%3A%2F%2Fsportique.co%2F&display=popup&ref=plugin&src=share_button', class: 'btn btn-facebook' do %>
+      <%= icon('facebook') %> Share on Facebook
+    <% end %>
+  </li>
+  <li>
+    <%= link_to 'https://twitter.com/intent/tweet?&text=just%20signed%20up%20for%20early%20access%20to%20%40sportique_co%2C%20a%20new%20home%20for%20female%20sports%20fans.%20Join%20early%20with%20me!%20%23sportique%20http%3A%2F%2Fsportique.co', class: 'btn btn-twitter' do %>
+      <%= icon('twitter') %> Share on Twitter
+    <% end %>
+  </li>
+</ul>

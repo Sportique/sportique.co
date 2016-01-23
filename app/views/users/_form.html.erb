@@ -24,16 +24,16 @@
       <div class="row">
         <div class="col-xs-6">
           <div class="radio">
-            <%= f.label :gender_male do |lb| %>
-              <%= f.radio_button :gender, "male", checked: true %>
+            <%= f.label :gender_female do |lb| %>
+              <%= f.radio_button :gender, "female", checked: true %>
               <%= lb.translation %>
             <% end %>
           </div>
         </div>
         <div class="col-xs-6">
           <div class="radio">
-            <%= f.label :gender_female do |lb| %>
-              <%= f.radio_button :gender, "female" %>
+            <%= f.label :gender_male do |lb| %>
+              <%= f.radio_button :gender, "male" %>
               <%= lb.translation %>
             <% end %>
           </div>

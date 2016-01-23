@@ -4,6 +4,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:url" content="<%= root_url %>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sportique" />
+  <meta property="og:description" content="A new home for female sports fans" />
+  <meta property="og:image" content="<%= image_url('share.png') %>" />
   <title>Sportique</title>
   <link href='https://fonts.googleapis.com/css?family=Crete+Round|Lato' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -21,11 +26,6 @@
   <div class="container text-center">
     <%= link_to root_url do image_tag 'welcome/logo.png', alt: 'Sportique', class: 'st-logo' end %>
     <h1 class="text-uppercase st-alpha">a new home for female sports fans</h1>
-    <p class="st-lead">
-      <%= image_tag 'welcome/star.png', alt: 'star' %>
-      We’re bringing something special to female sports fans
-      <%= image_tag 'welcome/star.png', alt: 'star' %>
-    </p>
 
     <%= yield %>
 
@@ -37,5 +37,6 @@
       <li><%= link_to pinterest_url do icon('pinterest', class: 'fa-2x') end %></li>
     </ul>
   </div>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </body>
 </html>

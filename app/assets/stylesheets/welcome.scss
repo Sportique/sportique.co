@@ -24,6 +24,14 @@ h6 {
   text-transform: uppercase;
 }
 
+.btn-facebook {
+  @include button-variant(#FFFFFF, #3B5998, #3B5998);
+}
+
+.btn-twitter {
+  @include button-variant(#FFFFFF, #4099FF, #4099FF);
+}
+
 .st-logo {
   margin-top: 40px;
   margin-bottom: 60px;
