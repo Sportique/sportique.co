@@ -29,7 +29,7 @@ en:
       share_url: //www.facebook.com/sharer/sharer.php?display=popup&ref=plugin&sdk=joey&src=share_button&u=%{u}
     twitter:
       url: //twitter.com/therelishsports
-      share_message: "just signed up for early access to @therelishsports, a new home for female sports fans. Join early with me! #therelish %{u}"
+      share_message: "Signed up for early access to @therelishsports, a new home for female sports fans. Join early with me! #therelish %{u}"
       share_url: //twitter.com/intent/tweet
     instagram:
       url: //instagram.com/therelishsports
