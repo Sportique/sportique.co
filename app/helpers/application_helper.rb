@@ -1,17 +1,12 @@
 module ApplicationHelper
-  def facebook_url
-    '//www.facebook.com/sportique.co'
-  end
+  def external_url(url, options = {})
+    url_parts = URI.parse(url)
+    url_parts.query = [
+      url_parts.query,
+      options.to_query
+    ].compact
+     .join('&') if options.keys.any?
 
-  def twitter_url
-    '//twitter.com/Sportique_co'
-  end
-
-  def instagram_url
-    '//www.instagram.com/sportique.co'
-  end
-
-  def pinterest_url
-    '//www.pinterest.com'
+    url_parts.to_s
   end
 end

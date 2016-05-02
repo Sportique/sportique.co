@@ -1,6 +1,5 @@
 <%= form_for resource, html: { class: 'st-signup-form' } do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
-  <p class="text-muted">Sign up now for early access</p>
   <div class="form-group">
     <%= f.label :email, class: 'sr-only' %>
     <%= f.email_field :email, placeholder: true, class: 'form-control' %>

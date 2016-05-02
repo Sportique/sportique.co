@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:url" content="<%= root_url %>" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sportique" />
-  <meta property="og:description" content="A new home for female sports fans" />
+  <meta property="og:title" content="<%= t('application.name') %>" />
+  <meta property="og:description" content="<%= t('application.description') %>" />
   <meta property="og:image" content="<%= image_url('share.png') %>" />
   <meta property="fb:app_id" content="1054233927930579">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -27,7 +27,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <title>Sportique</title>
+  <title><%= t('application.name') %></title>
   <link href='https://fonts.googleapis.com/css?family=Crete+Round|Lato' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -42,17 +42,17 @@
 </head>
 <body>
   <div class="container text-center">
-    <%= link_to root_url do image_tag 'welcome/logo.png', alt: 'Sportique', class: 'st-logo' end %>
-    <h1 class="text-uppercase st-alpha">a new home for female sports fans</h1>
+    <%= link_to root_url do image_tag 'welcome/logo.png', alt: t('application.name'), class: 'st-logo' end %>
+    <h1 class="text-uppercase st-alpha"><%= t('application.description') %></h1>
 
     <%= yield %>
 
     <p class="text-muted">Stay connected</p>
     <ul class="st-list-social">
-      <li><%= link_to facebook_url do icon('facebook', class: 'fa-2x') end %></li>
-      <li><%= link_to twitter_url do icon('twitter', class: 'fa-2x') end %></li>
-      <li><%= link_to instagram_url do icon('instagram', class: 'fa-2x') end %></li>
-      <li><%= link_to pinterest_url do icon('pinterest', class: 'fa-2x') end %></li>
+      <li><%= link_to t('social.facebook.url') do icon('facebook', class: 'fa-2x') end %></li>
+      <li><%= link_to t('social.twitter.url') do icon('twitter', class: 'fa-2x') end %></li>
+      <li><%= link_to t('social.instagram.url') do icon('instagram', class: 'fa-2x') end %></li>
+      <li><%= link_to t('social.medium.url') do icon('medium', class: 'fa-2x') end %></li>
     </ul>
   </div>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>

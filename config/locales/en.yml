@@ -20,6 +20,21 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  application:
+    name: The Relish
+    description: The Sports Destination for Female Fans
+  social:
+    facebook:
+      url: //facebook.com/sportiquemedia
+      share_url: //www.facebook.com/sharer/sharer.php?display=popup&ref=plugin&sdk=joey&src=share_button&u=%{u}
+    twitter:
+      url: //twitter.com/therelishsports
+      share_message: "just signed up for early access to @therelishsports, a new home for female sports fans. Join early with me! #therelish %{u}"
+      share_url: //twitter.com/intent/tweet
+    instagram:
+      url: //instagram.com/therelishsports
+    medium:
+      url: //medium.com/@TheRelish
   activerecord:
     attributes:
       user:
